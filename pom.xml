@@ -161,6 +161,7 @@
                     <configuration>
                         <quiet>true</quiet>
                         <additionalparam>-Xdoclint:none</additionalparam>
+			<additionalparam>--allow-script-in-comments</additionalparam>
                     </configuration>
                 </plugin>
 
