@@ -85,7 +85,7 @@
         <maven.compiler.target>1.7</maven.compiler.target>
 
         <seamless.version>1.1.2</seamless.version>
-        <lemma.version>1.1.1</lemma.version>
+        <!--lemma.version>1.1.1</lemma.version-->
         <testng.version>6.14.3</testng.version>
         <android.version>4.1.1.4</android.version>
         <android.maven.plugin.version>4.1.1</android.maven.plugin.version>
@@ -102,37 +102,6 @@
         <kxml.version>2.3.0</kxml.version>
 
     </properties>
-
-    <!-- ##################################################################################################### -->
-
-    <repositories>
-        <repository>
-            <id>4thline-repo</id>
-            <url>http://4thline.org/m2</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>4thline-repo</id>
-            <url>http://4thline.org/m2</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>onejar-maven-plugin.googlecode.com</id>
-            <url>http://onejar-maven-plugin.googlecode.com/svn/mavenrepo</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
-
-    <!-- ##################################################################################################### -->
 
     <build>
 
@@ -214,19 +183,6 @@
                     <groupId>com.jolira</groupId>
                     <artifactId>onejar-maven-plugin</artifactId>
                     <version>1.4.4</version>
-                </plugin>
-
-                <!-- Manual generation settings -->
-                <plugin>
-                    <groupId>org.fourthline.lemma</groupId>
-                    <artifactId>lemma-maven-plugin</artifactId>
-                    <version>${lemma.version}</version>
-                    <configuration>
-                        <!-- Generate unique identifiers for all citations
-                        TODO: Docs cleanup necessary for this
-                        <processXRefs>false</processXRefs>
-                        -->
-                    </configuration>
                 </plugin>
 
                 <!-- Fixing the versions so Maven stops looking for the latest online... -->
