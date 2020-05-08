@@ -11,6 +11,8 @@ Generation requires java8 and can be achieved via:
 JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 mvn clean install -Dmaven.source.skip -DskipTests -Dmaven.javadoc.skip=true
 ```
 
+Below follows the original README from cling.
+
 # Cling EOL: This project is no longer actively maintained, code may be outdated. If you are interested in maintaining and developing this project, comment [here](https://github.com/4thline/cling/issues/244).
 
 ---
