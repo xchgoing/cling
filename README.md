@@ -1,3 +1,16 @@
+# cling core and support
+
+This is a fork from 4th line cling project https://github.com/4thline/cling intended for Nova Video Player use only.
+
+The goal of this fork is to be able to compile cling-core and cling-support with a minimum of dependencies and no link to 4thline repositories.
+
+As a consequence all the changes made are potentially breaking cling other modules.
+
+Generation requires java8 and can be achieved via:
+```
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 mvn clean install -Dmaven.source.skip -DskipTests -Dmaven.javadoc.skip=true
+```
+
 # Cling EOL: This project is no longer actively maintained, code may be outdated. If you are interested in maintaining and developing this project, comment [here](https://github.com/4thline/cling/issues/244).
 
 ---
