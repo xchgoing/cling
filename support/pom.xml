@@ -114,16 +114,30 @@
         </plugins>
     </build>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <dependencies>
 
         <dependency>
-            <groupId>org.fourthline.cling</groupId>
+            <groupId>com.github.nova-video-player.cling</groupId>
             <artifactId>cling-core</artifactId>
             <version>${project.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>org.seamless</groupId>
+            <groupId>com.github.nova-video-player.seamless</groupId>
             <artifactId>seamless-swing</artifactId>
             <version>${seamless.version}</version>
         </dependency>
