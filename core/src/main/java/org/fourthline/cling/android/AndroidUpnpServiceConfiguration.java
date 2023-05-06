@@ -20,7 +20,7 @@ import org.fourthline.cling.DefaultUpnpServiceConfiguration;
 import org.fourthline.cling.binding.xml.DeviceDescriptorBinder;
 import org.fourthline.cling.binding.xml.RecoveringUDA10DeviceDescriptorBinderImpl;
 import org.fourthline.cling.binding.xml.ServiceDescriptorBinder;
-import org.fourthline.cling.binding.xml.UDA10ServiceDescriptorBinderImpl;
+import org.fourthline.cling.binding.xml.UDA10ServiceDescriptorBinderSAXImpl;
 import org.fourthline.cling.model.Namespace;
 import org.fourthline.cling.model.ServerClientTokens;
 import org.fourthline.cling.transport.impl.AsyncServletStreamServerConfigurationImpl;
@@ -122,7 +122,7 @@ public class AndroidUpnpServiceConfiguration extends DefaultUpnpServiceConfigura
 
     @Override
     protected ServiceDescriptorBinder createServiceDescriptorBinderUDA10() {
-        return new UDA10ServiceDescriptorBinderImpl();
+        return new UDA10ServiceDescriptorBinderSAXImpl();
     }
 
     @Override
