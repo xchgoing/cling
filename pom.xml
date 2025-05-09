@@ -23,7 +23,7 @@
     -->
     <!-- ##################################################################################################### -->
 
-    <groupId>org.fourthline.cling</groupId>
+    <groupId>com.github.xchgoing.cling</groupId>
     <artifactId>cling</artifactId>
     <packaging>pom</packaging>
     <version>2.1.2</version>
