@@ -29,6 +29,7 @@ import java.net.InetSocketAddress;
 import java.net.MulticastSocket;
 import java.net.NetworkInterface;
 import java.net.SocketException;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
@@ -106,7 +107,7 @@ public class MulticastReceiverImpl implements MulticastReceiver<MulticastReceive
 
         log.fine("Entering blocking receiving loop, listening for UDP datagrams on: " + socket.getLocalAddress());
         while (true) {
-
+            log.log(Level.WARNING, "cling try to get host address !!!!!!!!!");
             try {
                 byte[] buf = new byte[getConfiguration().getMaxDatagramBytes()];
                 DatagramPacket datagram = new DatagramPacket(buf, buf.length);

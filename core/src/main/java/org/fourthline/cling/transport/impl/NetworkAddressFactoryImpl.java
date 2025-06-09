@@ -169,6 +169,7 @@ public class NetworkAddressFactoryImpl implements NetworkAddressFactory {
 
     public byte[] getHardwareAddress(InetAddress inetAddress) {
         try {
+            log.log(Level.WARNING, "cling try to get hardware address!!!!!!!!!!");
             NetworkInterface iface = NetworkInterface.getByInetAddress(inetAddress);
             return iface != null ? iface.getHardwareAddress() : null;
         } catch (Throwable ex) {
